@@ -1,0 +1,3 @@
+[submodule "browser_extension"]
+	path = browser_extension
+	url = git@gitee.com:huang007guo/browser_extension.git
