@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-padding-bottom: 20px;
+  overscroll-behavior: none;
+}
+
+body {
+  overscroll-behavior: none;
+}
+
 :root {
   --primary-color: #2563eb;
   --secondary-color: #64748b;
@@ -32,6 +41,7 @@ body {
 
 main {
   flex: 1;
+  padding-bottom: 30px;
 }
 
 section {

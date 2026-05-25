@@ -26,6 +26,20 @@ function App() {
     return () => observer.disconnect()
   }, [])
 
+  useEffect(() => {
+    const clampScroll = () => {
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight
+      if (window.scrollY > maxScroll - 1) {
+        window.scrollTo(0, maxScroll)
+      }
+      requestAnimationFrame(clampScroll)
+    }
+    
+    clampScroll()
+    
+    return () => {}
+  }, [])
+
   return (
     <div className="app">
       <Navbar />
@@ -36,7 +50,7 @@ function App() {
         <Blog />
         <Contact />
       </main>
-      <footer className="footer" data-reveal data-reveal-delay="0.2">
+      <footer className="footer">
         <p>&copy; {new Date().getFullYear()} 黄国梁. All rights reserved.</p>
         <p className="footer-description">AI应用开发工程师 / 架构师 | 15年软件开发经验</p>
       </footer>
