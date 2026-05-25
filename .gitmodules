@@ -1,3 +1,6 @@
 [submodule "browser_extension"]
 	path = browser_extension
 	url = git@gitee.com:huang007guo/browser_extension.git
+[submodule "portfolio"]
+	path = portfolio
+	url = git@github.com:huang007guo/portfolio.git
