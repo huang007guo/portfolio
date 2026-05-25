@@ -9,7 +9,7 @@ function About() {
 
         <div className="about-content">
           <div className="about-avatar">
-            <img src="/1624344075435.jpg" alt="个人头像" className="avatar-image" />
+            <img src={`${import.meta.env.BASE_URL}avatar.jpg`} alt="个人头像" className="avatar-image" />
           </div>
 
           <div className="about-text">
