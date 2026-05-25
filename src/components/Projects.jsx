@@ -50,8 +50,8 @@ function Projects() {
         <h2><Icon icon="mdi:briefcase" className="section-icon" />精选项目</h2>
 
         <div className="projects-grid">
-          {projects.map(project => (
-            <div key={project.id} className="project-card">
+          {projects.map((project, index) => (
+            <div key={project.id} className={`project-card delay-${index + 1}`} data-reveal>
               <div className="project-image">
                 <Icon icon="mdi:code-tags" className="project-image-icon" />
               </div>

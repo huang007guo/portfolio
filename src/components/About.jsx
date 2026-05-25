@@ -8,11 +8,11 @@ function About() {
         <h2><Icon icon="mdi:account-details" className="section-icon" />关于我</h2>
 
         <div className="about-content">
-          <div className="about-avatar">
+          <div className="about-avatar" data-reveal="left">
             <img src={`${import.meta.env.BASE_URL}avatar.jpg`} alt="个人头像" className="avatar-image" />
           </div>
 
-          <div className="about-text">
+          <div className="about-text" data-reveal>
             <p>
               计算机专业毕业，在校获得过信息技术大赛一等奖、优秀毕业生、软考程序员等荣誉。
               拥有15年开发架构经验，具备扎实的Java、C语言基础，熟练掌握Spring Boot、Spring Cloud等主流框架，
@@ -32,7 +32,7 @@ function About() {
             </p>
           </div>
 
-          <div className="about-stats">
+          <div className="about-stats" data-reveal="right">
             <div className="stat-item">
               <Icon icon="mdi:briefcase" className="stat-icon" />
               <span className="stat-number">15+</span>
@@ -51,9 +51,9 @@ function About() {
           </div>
         </div>
 
-        <h3 className="skills-heading"><Icon icon="mdi:tools" className="subsection-icon" />专业技能</h3>
+        <h3 className="skills-heading" data-reveal><Icon icon="mdi:tools" className="subsection-icon" />专业技能</h3>
         <div className="skills-grid">
-          <div className="skill-category">
+          <div className="skill-category delay-1" data-reveal>
             <h4><Icon icon="mdi:server" className="skill-icon" />后端技术</h4>
             <ul>
               <li><Icon icon="mdi:language-java" className="list-icon" />Java / Spring Boot / Spring Cloud</li>
@@ -63,7 +63,7 @@ function About() {
             </ul>
           </div>
 
-          <div className="skill-category">
+          <div className="skill-category delay-2" data-reveal>
             <h4><Icon icon="mdi:web" className="skill-icon" />前端技术</h4>
             <ul>
               <li><Icon icon="mdi:vuejs" className="list-icon" />Vue.js / Vue3</li>
@@ -73,7 +73,7 @@ function About() {
             </ul>
           </div>
 
-          <div className="skill-category">
+          <div className="skill-category delay-3" data-reveal>
             <h4><Icon icon="mdi:robot" className="skill-icon" />AI & 工具</h4>
             <ul>
               <li><Icon icon="mdi:image-multiple" className="list-icon" />Stable Diffusion / AIGC</li>

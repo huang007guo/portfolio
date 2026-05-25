@@ -1,29 +1,29 @@
-import { useState } from 'react'
+// TODO: 后端就绪后恢复表单功能
+// import { useState } from 'react'
 import { Icon } from '@iconify/react'
 import './Contact.css'
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  })
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    })
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    // Handle form submission here
-    console.log('Form submitted:', formData)
-    alert('感谢您的留言！我会尽快回复您。')
-    setFormData({ name: '', email: '', subject: '', message: '' })
-  }
+  // const [formData, setFormData] = useState({
+  //   name: '',
+  //   email: '',
+  //   subject: '',
+  //   message: ''
+  // })
+  //
+  // const handleChange = (e) => {
+  //   setFormData({
+  //     ...formData,
+  //     [e.target.name]: e.target.value
+  //   })
+  // }
+  //
+  // const handleSubmit = (e) => {
+  //   e.preventDefault()
+  //   console.log('Form submitted:', formData)
+  //   alert('感谢您的留言！我会尽快回复您。')
+  //   setFormData({ name: '', email: '', subject: '', message: '' })
+  // }
 
   return (
     <section id="contact" className="contact">
@@ -31,7 +31,7 @@ function Contact() {
         <h2><Icon icon="mdi:email" className="section-icon" />联系我</h2>
 
                 <div className="contact-content">
-                  <div className="contact-info">
+                  <div className="contact-info" data-reveal>
                     <h3><Icon icon="mdi:handshake" className="contact-heading-icon" />期待与您合作</h3>
                     <p>
                       我始终开放讨论新项目、创意想法，或成为您愿景的一部分的机会。
@@ -40,19 +40,19 @@ function Contact() {
 
                     <div className="contact-details">
                       <div className="contact-item">
-                        <Icon icon="mdi:phone" className="contact-icon" />
-                        <div>
+                        <div className="contact-row">
+                          <Icon icon="mdi:phone" className="contact-icon" />
                           <strong>电话</strong>
-                          <a href="tel:139****4003">139-****-4003</a>
                         </div>
+                        <a href="tel:139****4003">139-****-4003</a>
                       </div>
 
                       <div className="contact-item">
-                        <Icon icon="mdi:email" className="contact-icon" />
-                        <div>
+                        <div className="contact-row">
+                          <Icon icon="mdi:email" className="contact-icon" />
                           <strong>邮箱</strong>
-                          <a href="mailto:huang007guo@qq.com">huang007guo@qq.com</a>
                         </div>
+                        <a href="mailto:huang007guo@qq.com">huang007guo@qq.com</a>
                       </div>
 
 
@@ -74,6 +74,7 @@ function Contact() {
                     </div>
                   </div>
 
+                  {/* TODO: 后端就绪后恢复表单
                   <form className="contact-form" onSubmit={handleSubmit}>
                     <div className="form-group">
                       <label htmlFor="name"><Icon icon="mdi:account" className="form-icon" />姓名</label>
@@ -131,6 +132,7 @@ function Contact() {
                       <Icon icon="mdi:send" className="btn-icon" />发送留言
                     </button>
                   </form>
+                  */}
                 </div>
               </div>
             </section>

@@ -101,6 +101,118 @@ a:hover {
   border-top: 1px solid var(--border-color);
 }
 
+/* ========== 全局动画关键帧 ========== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== 滚动揭示系统 ========== */
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-reveal].revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 变体：从左滑入 */
+[data-reveal="left"] {
+  transform: translateX(-30px);
+}
+
+[data-reveal="left"].revealed {
+  transform: translateX(0);
+}
+
+/* 变体：从右滑入 */
+[data-reveal="right"] {
+  transform: translateX(30px);
+}
+
+[data-reveal="right"].revealed {
+  transform: translateX(0);
+}
+
+/* 变体：缩放弹入 */
+[data-reveal="scale"] {
+  transform: scale(0.85);
+}
+
+[data-reveal="scale"].revealed {
+  transform: scale(1);
+}
+
+/* 延迟工具类 */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+.delay-5 { transition-delay: 0.5s; }
+.delay-6 { transition-delay: 0.6s; }
+
+/* ========== 响应式 ========== */
+
 @media (max-width: 768px) {
   section {
     padding: 60px 16px;

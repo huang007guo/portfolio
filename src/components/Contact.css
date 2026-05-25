@@ -8,10 +8,10 @@
   padding: 0 20px;
 }
 
+/* TODO: 表单恢复后改回 grid-template-columns: 1fr 1fr */
 .contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  max-width: 680px;
+  margin: 0 auto;
   align-items: start;
 }
 
@@ -28,29 +28,39 @@
 
 .contact-details {
   margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .contact-item {
-  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
 }
 
-.contact-item strong {
-  display: block;
-  margin-bottom: 0.3rem;
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-row strong {
   color: var(--text-color);
+  font-size: 1.05rem;
 }
 
 .contact-item a {
   color: var(--primary-color);
   text-decoration: none;
-}
-
-.contact-item p {
-  color: var(--secondary-color);
+  font-size: 1rem;
 }
 
 .social-links {
   display: flex;
+  justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
 }
@@ -84,20 +94,10 @@
 }
 
 .contact-icon {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--primary-color);
-  margin-right: 1rem;
   flex-shrink: 0;
-}
-
-.contact-item {
-  margin-bottom: 1.5rem;
-  display: flex;
-  align-items: flex-start;
-}
-
-.contact-item div {
-  flex: 1;
+  margin-top: 0.2rem;
 }
 
 .social-icon {

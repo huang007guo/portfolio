@@ -63,11 +63,11 @@ function Blog() {
     <section id="blog" className="blog">
       <div className="blog-container">
         <h2><Icon icon="mdi:post" className="section-icon" />技术博客</h2>
-        <p className="blog-intro"><Icon icon="mdi:information" className="intro-icon" />我在CSDN上分享了69篇技术文章，涵盖Java、Spring Boot、微服务架构、AI技术等多个领域。以下是精选文章：</p>
+        <p className="blog-intro" data-reveal><Icon icon="mdi:information" className="intro-icon" />我在CSDN上分享了69篇技术文章，涵盖Java、Spring Boot、微服务架构、AI技术等多个领域。以下是精选文章：</p>
 
         <div className="blog-grid">
-          {posts.map(post => (
-            <article key={post.id} className="blog-card">
+          {posts.map((post, index) => (
+            <article key={post.id} className={`blog-card delay-${index + 1}`} data-reveal>
               <div className="blog-card-content">
                 <div className="blog-meta">
                   <span className="blog-date"><Icon icon="mdi:calendar" className="meta-icon" />{post.date}</span>

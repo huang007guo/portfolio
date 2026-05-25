@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import './App.css'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -7,6 +8,24 @@ import Contact from './components/Contact'
 import Navbar from './components/Navbar'
 
 function App() {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed')
+          }
+        })
+      },
+      { threshold: 0.15, rootMargin: '0px 0px -50px 0px' }
+    )
+
+    const elements = document.querySelectorAll('[data-reveal]')
+    elements.forEach((el) => observer.observe(el))
+
+    return () => observer.disconnect()
+  }, [])
+
   return (
     <div className="app">
       <Navbar />
@@ -17,7 +36,7 @@ function App() {
         <Blog />
         <Contact />
       </main>
-      <footer className="footer">
+      <footer className="footer" data-reveal data-reveal-delay="0.2">
         <p>&copy; {new Date().getFullYear()} 黄国梁. All rights reserved.</p>
         <p className="footer-description">AI应用开发工程师 / 架构师 | 15年软件开发经验</p>
       </footer>
