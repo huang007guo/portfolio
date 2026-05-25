@@ -108,6 +108,12 @@
   vertical-align: middle;
 }
 
+.about-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 .stat-icon {
   font-size: 2rem;
   color: var(--primary-color);

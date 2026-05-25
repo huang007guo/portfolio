@@ -55,21 +55,7 @@ function Contact() {
                         </div>
                       </div>
 
-                      <div className="contact-item">
-                        <Icon icon="mdi:map-marker" className="contact-icon" />
-                        <div>
-                          <strong>期望城市</strong>
-                          <p>上海</p>
-                        </div>
-                      </div>
 
-                      <div className="contact-item">
-                        <Icon icon="mdi:briefcase" className="contact-icon" />
-                        <div>
-                          <strong>求职意向</strong>
-                          <p>架构师（期望薪资：25-35K）</p>
-                        </div>
-                      </div>
                     </div>
 
                     <div className="social-links">
@@ -79,10 +65,10 @@ function Contact() {
                       <a href="https://gitee.com/huang007guo" className="social-link" title="Gitee">
                         <Icon icon="mdi:git" className="social-icon" />Gitee
                       </a>
-                      <a href="https://www.huggingai.com/" className="social-link" title="HuggingAI">
+                      <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkzNTQyOTUyOA==&action=getalbum&album_id=2972072666612400132&scene=173&from_msgid=2247483731&from_itemidx=1&count=3&nolastread=1#wechat_redirect" className="social-link" title="HuggingAI">
                         <Icon icon="mdi:robot" className="social-icon" />HuggingAI
                       </a>
-                      <a href="#" className="social-link" title="GitHub">
+                      <a href="https://github.com/huang007guo" className="social-link" title="GitHub">
                         <Icon icon="mdi:github" className="social-icon" />GitHub
                       </a>
                     </div>
