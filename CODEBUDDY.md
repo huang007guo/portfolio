@@ -138,6 +138,15 @@ main.jsx (入口)
 ### 自托管
 运行 `npm run build` 后，将 `dist/` 目录部署到任意静态文件服务器（Nginx、Apache 等）。
 
+## 个人页面域名配置
+
+- **生产环境域名**：`https://portfolio.huggingai.com/`
+- **部署平台**：GitHub Pages
+- **CNAME 文件**：`public/CNAME`（已配置自定义域名）
+- **Vite base 配置**：`vite.config.js` 中 `base: '/'`（使用自定义域名时不需要 `/portfolio/` 前缀）
+- **构建输出**：`dist/` 目录
+- **自动部署**：推送 `main` 分支后，GitHub Actions 自动构建并部署到 GitHub Pages
+
 ## 技术决策笔记
 
 - **为何不用 UI 框架**：保持轻量，完全自定义设计，避免样式覆盖冲突
