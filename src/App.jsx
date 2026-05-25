@@ -26,20 +26,6 @@ function App() {
     return () => observer.disconnect()
   }, [])
 
-  useEffect(() => {
-    const clampScroll = () => {
-      const maxScroll = document.documentElement.scrollHeight - window.innerHeight
-      if (window.scrollY > maxScroll - 1) {
-        window.scrollTo(0, maxScroll)
-      }
-      requestAnimationFrame(clampScroll)
-    }
-    
-    clampScroll()
-    
-    return () => {}
-  }, [])
-
   return (
     <div className="app">
       <Navbar />

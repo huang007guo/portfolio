@@ -6,11 +6,6 @@
 
 html {
   scroll-padding-bottom: 20px;
-  overscroll-behavior: none;
-}
-
-body {
-  overscroll-behavior: none;
 }
 
 :root {
