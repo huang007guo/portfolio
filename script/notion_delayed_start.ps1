@@ -22,7 +22,7 @@ while ($elapsed -lt $maxWaitSeconds) {
 
     if ($portOpen) {
         Write-Host "[成功] 检测到翻墙软件已启动 (端口 $proxyPort)，正在启动 Notion..."
-        Start-Sleep 2
+        Start-Sleep 10
         Start-Process $notionPath
         exit 0
     }
