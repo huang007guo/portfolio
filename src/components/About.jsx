@@ -30,39 +30,6 @@ function About() {
               工作踏实肯干，多次获得优秀员工表彰。性格开朗，善于团队协作，能快速融入新环境。
               业余时间积极参与技术社区交流，关注AI编程领域最新动态，乐于通过博客、开源项目等方式持续学习。
             </p>
-
-            <h3><Icon icon="mdi:tools" className="subsection-icon" />专业技能</h3>
-            <div className="skills-grid">
-              <div className="skill-category">
-                <h4><Icon icon="mdi:server" className="skill-icon" />后端技术</h4>
-                <ul>
-                  <li><Icon icon="mdi:language-java" className="list-icon" />Java / Spring Boot / Spring Cloud</li>
-                  <li><Icon icon="mdi:language-python" className="list-icon" />Python / Django / Flask</li>
-                  <li><Icon icon="mdi:language-php" className="list-icon" />PHP / Laravel</li>
-                  <li><Icon icon="mdi:microservice" className="list-icon" />微服务架构 / 分布式系统</li>
-                </ul>
-              </div>
-
-              <div className="skill-category">
-                <h4><Icon icon="mdi:web" className="skill-icon" />前端技术</h4>
-                <ul>
-                  <li><Icon icon="mdi:vuejs" className="list-icon" />Vue.js / Vue3</li>
-                  <li><Icon icon="mdi:language-javascript" className="list-icon" />JavaScript / TypeScript</li>
-                  <li><Icon icon="mdi:react" className="list-icon" />React / HTML5 / CSS3</li>
-                  <li><Icon icon="mdi:cellphone" className="list-icon" />uni-app</li>
-                </ul>
-              </div>
-
-              <div className="skill-category">
-                <h4><Icon icon="mdi:robot" className="skill-icon" />AI & 工具</h4>
-                <ul>
-                  <li><Icon icon="mdi:image-multiple" className="list-icon" />Stable Diffusion / AIGC</li>
-                  <li><Icon icon="mdi:code-braces" className="list-icon" />GitHub Copilot / Cursor</li>
-                  <li><Icon icon="mdi:brain" className="list-icon" />Claude Code / CodeBuddy</li>
-                  <li><Icon icon="mdi:docker" className="list-icon" />Docker / Git / CI/CD</li>
-                </ul>
-              </div>
-            </div>
           </div>
 
           <div className="about-stats">
@@ -81,6 +48,39 @@ function About() {
               <span className="stat-number">10+</span>
               <span className="stat-label">技术栈掌握</span>
             </div>
+          </div>
+        </div>
+
+        <h3 className="skills-heading"><Icon icon="mdi:tools" className="subsection-icon" />专业技能</h3>
+        <div className="skills-grid">
+          <div className="skill-category">
+            <h4><Icon icon="mdi:server" className="skill-icon" />后端技术</h4>
+            <ul>
+              <li><Icon icon="mdi:language-java" className="list-icon" />Java / Spring Boot / Spring Cloud</li>
+              <li><Icon icon="mdi:language-python" className="list-icon" />Python / Django / Flask</li>
+              <li><Icon icon="mdi:language-php" className="list-icon" />PHP / Laravel</li>
+              <li><Icon icon="mdi:microservice" className="list-icon" />微服务架构 / 分布式系统</li>
+            </ul>
+          </div>
+
+          <div className="skill-category">
+            <h4><Icon icon="mdi:web" className="skill-icon" />前端技术</h4>
+            <ul>
+              <li><Icon icon="mdi:vuejs" className="list-icon" />Vue.js / Vue3</li>
+              <li><Icon icon="mdi:language-javascript" className="list-icon" />JavaScript / TypeScript</li>
+              <li><Icon icon="mdi:react" className="list-icon" />React / HTML5 / CSS3</li>
+              <li><Icon icon="mdi:cellphone" className="list-icon" />uni-app</li>
+            </ul>
+          </div>
+
+          <div className="skill-category">
+            <h4><Icon icon="mdi:robot" className="skill-icon" />AI & 工具</h4>
+            <ul>
+              <li><Icon icon="mdi:image-multiple" className="list-icon" />Stable Diffusion / AIGC</li>
+              <li><Icon icon="mdi:code-braces" className="list-icon" />GitHub Copilot / Cursor</li>
+              <li><Icon icon="mdi:brain" className="list-icon" />Claude Code / CodeBuddy</li>
+              <li><Icon icon="mdi:docker" className="list-icon" />Docker / Git / CI/CD</li>
+            </ul>
           </div>
         </div>
       </div>
